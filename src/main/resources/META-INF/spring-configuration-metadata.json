@@ -1,0 +1,20 @@
+{"properties": [
+  {
+    "name": "jleo.jcontrol.interceptUrl",
+    "type": "java.lang.String",
+    "defaultValue": "/**",
+    "description": "在此地址下开启登录拦截"
+  },
+  {
+    "name": "jleo.jcontrol.loginUrl",
+    "type": "java.lang.String",
+    "defaultValue": "/login",
+    "description": "后端登录验证地址"
+  },
+  {
+    "name": "jleo.jcontrol.securityKey",
+    "type": "java.lang.String",
+    "defaultValue": "JohnnyLeoStudio",
+    "description": "加密时使用的密钥(自定义更安全)"
+  }
+]}
