@@ -11,7 +11,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="JControl" target="1.8" />
+      <module name="JControl" target="1.5" />
       <module name="JControl-spring-boot-starter" target="1.8" />
     </bytecodeTargetLevel>
   </component>
