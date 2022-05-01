@@ -18,3 +18,5 @@ JControl有统一返回json格式。code属性是返回码，-1表示服务器�
 由于用户配置了需要登录拦截的地址，实现原理便是读取用户配置，使用spring的拦截器，一个拦截器是全路径拦截器，用于默认支持跨域请求，一个是登录拦截器，将用户配置中的拦截地址和非拦截地址设置入拦截器。
 由于JControl不控制业务，所以登录功能的判断需要开发人员自己编写，但是为了JControl做会话保持，所以当用户登录成功的代码逻辑之后，需要调用JControl的API，传入登录的用户，让JControl向客户端的cookie中写入加密的登录信息。
 同时，开发人员不用手动向cookie里面加入信息，只需要调用JControl的conversation的API，便可以向cookie里面加入加密的信息。读取cookie的信息操作也是一样简单。内容在cookie里面保存类型为字符串，所以需要开发者将对象等信息转换为格式化的json字符串。
+
+_与前端对接的使用案例请参考：https://github.com/AmbitiousLiu/aim/tree/master/web_
